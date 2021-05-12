@@ -7,7 +7,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // document types
 import eventInformation from './documents/eventInformation'
 import person from './documents/person'
-import codeOfConduct from './documents/codeOfConduct'
 import session from './documents/session'
 import program from './documents/program'
 
@@ -30,7 +29,6 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    codeOfConduct,
     eventInformation,
     person,
     venue,

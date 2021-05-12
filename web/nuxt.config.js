@@ -42,7 +42,25 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyC0h6iBstW2WF86JxeF-wV7tz1DXqhnlX4',
+          authDomain: 'test-190c5.firebaseapp.com',
+          projectId: 'test-190c5',
+          storageBucket: 'test-190c5.appspot.com',
+          messagingSenderId: '854498698477',
+          appId: '1:854498698477:web:d5ea69e1e94b6d611d98e4',
+        },
+        services: {
+          auth: true,
+          firestore: true
+        }
+      }
+    ]
+  ],
 
   /*
    ** Set global info from sanity document

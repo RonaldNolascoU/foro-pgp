@@ -4,6 +4,11 @@ export default {
   title: 'Person',
   fields: [
     {
+      name: 'id',
+      title: 'Firestore ID',
+      type: 'string'
+    },
+    {
       name: 'name',
       title: 'Name',
       type: 'string'

@@ -13,10 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/firebase": "^7.5.0",
     "@nuxtjs/pwa": "^2.6.0",
     "@sanity/client": "^2.0.0",
     "@sanity/image-url": "^0.140.19",
     "cross-env": "^5.2.0",
+    "firebase": "^8.6.0",
     "groq": "^0.140.0",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.6.2",

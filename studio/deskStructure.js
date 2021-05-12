@@ -5,7 +5,7 @@ import { MdGavel } from "react-icons/md";
 import { MdInfoOutline as MdInfo } from "react-icons/md";
 
 const hiddenDocTypes = listItem =>
-  !['program', 'session', 'person', 'eventInformation', 'codeOfConduct'].includes(listItem.getId())
+  !['program', 'session', 'person', 'eventInformation'].includes(listItem.getId())
 
 export default () =>
   S.list()
@@ -38,15 +38,6 @@ export default () =>
         .icon(MdPerson)
         .schemaType('person')
         .child(S.documentTypeList('person').title('Persons')),
-      S.listItem()
-        .title('Code of Conduct')
-        .icon(MdGavel)
-        .child(
-          S.editor()
-            .id('codeOfConduct')
-            .schemaType('codeOfConduct')
-            .documentId('codeOfConduct')
-        ),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
