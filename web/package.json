@@ -17,6 +17,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "@sanity/client": "^2.0.0",
     "@sanity/image-url": "^0.140.19",
+    "bootstrap": "^5.0.0",
     "cross-env": "^5.2.0",
     "firebase": "^8.6.0",
     "groq": "^0.140.0",
@@ -40,7 +41,13 @@
     "eslint-plugin-promise": ">=4.1.1",
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
+    "fibers": "^5.0.0",
+    "node-sass": "^6.0.0",
     "nodemon": "^1.18.10",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^10.2.0"
   }
 }

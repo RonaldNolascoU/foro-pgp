@@ -1,12 +1,8 @@
-<template>
-  <header class="header">
-    <nuxt-link to="/" class="home">{{ title }}</nuxt-link>
-    <nav>
-      <nuxt-link to="/sessions">Sessions</nuxt-link>
-      <nuxt-link to="/speakers">Speakers</nuxt-link>
-      <a v-if="ticketLink" :href="ticketLink">Tickets</a>
-    </nav>
-  </header>
+<template lang="pug">
+  header.header
+    nuxt-link(to="/" class="home") {{ title }}
+    nav
+      nuxt-link(to="/users") Users
 </template>
 
 <script>
@@ -24,14 +20,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @import '../styles/custom-properties.css';
 
 .header {
   padding: 1.5rem;
-  max-width: var(--width-medium);
   box-sizing: border-box;
   margin: 0 auto;
+  background: yellow;
 }
 
 @media screen and (min-width: 520px) {

@@ -4,6 +4,7 @@
       :title="$store.state.eventInformation.name"
       :ticket-link="$store.state.eventInformation.ticket"
     />
+    <Sidebar />
     <nuxt />
     <Footer />
   </div>
@@ -12,11 +13,13 @@
 <script>
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
+import Sidebar from '../components/Sidebar.vue'
 
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    Sidebar
   }
 }
 </script>
