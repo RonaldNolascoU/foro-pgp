@@ -1,8 +1,9 @@
 <template lang="pug">
-  header.header
-    nuxt-link(to="/" class="home") {{ title }}
-    nav
-      nuxt-link(to="/users") Users
+header.header
+  nuxt-link.home(to='/') {{ title }}
+  nav
+    nuxt-link(to='/users') Users
+    nuxt-link(to='/components') Components
 </template>
 
 <script>
@@ -27,7 +28,7 @@ export default {
   padding: 1.5rem;
   box-sizing: border-box;
   margin: 0 auto;
-  background: yellow;
+  background: #fafbfc;
 }
 
 @media screen and (min-width: 520px) {

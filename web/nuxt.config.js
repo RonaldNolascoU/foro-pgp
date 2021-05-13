@@ -32,12 +32,18 @@ export default {
   /*
    ** Global CSS
    */
-  css: [{ src: 'normalize.css' }],
+  css: ["~/node_modules/bootstrap/scss/bootstrap.scss", "~/node_modules/bootstrap-icons/font/bootstrap-icons.css"],
+
+  link: [
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap' }
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/eventInformation'],
+  plugins: ['~/plugins/eventInformation',
+  { src: "~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", mode: "client" }
+],
 
   /*
    ** Nuxt.js modules

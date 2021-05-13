@@ -1,5 +1,4 @@
 <template lang="pug">
-Hero Para
 </template>
 
 <script>

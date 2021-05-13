@@ -1,5 +1,5 @@
 <template lang="pug">
-.sidebar
+.sidebar.d-flex
 </template>
 
 <script>
@@ -8,10 +8,9 @@ export default {}
 
 <style lang="scss">
 .sidebar {
-  background: red;
+  background: #fafbfc;
   height: 100vh;
-  position: absolute;
+  max-width: 125px;
   left: 0;
-  width: 3%;
 }
 </style>

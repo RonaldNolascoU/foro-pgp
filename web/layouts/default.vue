@@ -1,13 +1,13 @@
-<template>
-  <div>
-    <Navbar
+<template lang="pug">
+  div
+    Navbar(
       :title="$store.state.eventInformation.name"
       :ticket-link="$store.state.eventInformation.ticket"
-    />
-    <Sidebar />
-    <nuxt />
-    <Footer />
-  </div>
+    )
+    .row.m-0
+      Sidebar
+      nuxt.layout
+    Footer
 </template>
 
 <script>
@@ -32,6 +32,10 @@ html {
   font-family: var(--font-family-sans);
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
+}
+
+.layout {
+  flex: 1;
 }
 
 body {
