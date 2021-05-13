@@ -22,6 +22,9 @@ export default {}
   list-style: none;
 
   .breacrumb-item {
+    &.hover {
+      text-decoration: underline;
+    }
     &::after {
       padding: 8px;
       color: #9fd44e !important;

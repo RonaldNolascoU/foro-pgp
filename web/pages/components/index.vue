@@ -9,10 +9,13 @@ div
       NeedALawyerButton
     .col-2
       Breadcrumb
-    .col-2
-      ProfileButton
-    .col-2
-      ProfileButton
+    .col-4
+      PostTitle(
+        :title='"Hacienda Bogotá cumple un año con términos suspendidos"'
+      )
+  .row
+    .col-6
+      UserHero
 </template>
 
 <script>
@@ -20,9 +23,18 @@ import ProfileButton from '@/components/ProfileButton'
 import Avatar from '@/components/Avatar'
 import NeedALawyerButton from '@/components/NeedALawyerButton'
 import Breadcrumb from '@/components/Breadcrumb'
+import PostTitle from '@/components/PostTitle'
+import UserHero from '@/components/users/UserHero'
 
 export default {
-  components: { ProfileButton, Avatar, NeedALawyerButton, Breadcrumb }
+  components: {
+    ProfileButton,
+    Avatar,
+    NeedALawyerButton,
+    Breadcrumb,
+    PostTitle,
+    UserHero
+  }
 }
 </script>
 
