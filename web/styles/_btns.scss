@@ -1,0 +1,19 @@
+.radius-left {
+  border-top: 26px;
+  border-left: 26px;
+}
+.radius-left {
+  border-radius: 26px 0 0 26px;
+  height: 55px;
+  width: 220px;
+}
+.radius-right {
+  border-radius: 0 26px 26px 0;
+  height: 55px;
+  width: 220px;
+  border-left: 1px solid white;
+}
+.btn-radius {
+  border-radius: 26px;
+  height: 55px;
+}
