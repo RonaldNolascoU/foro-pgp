@@ -2,7 +2,7 @@
 .user__hero
   .row
     .col-6.avatar
-      Avatar(:width='150', :height='150')
+      Avatar(:img="'/users/fondo.png'", :width='150', :height='150')
     .col-6.d-flex.flex-column.justify-content-between
       h1 María Helena Padilla
       i.d-flex mpadilla@pgplegal.com

@@ -10,6 +10,12 @@ const routesQuery = `
 
 export default {
   mode: 'spa',
+  components: [
+    {
+      path: '~/web/components',
+      pathPrefix: false,
+    },
+  ],
 
   /*
    ** Headers of the page
@@ -42,8 +48,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: ['~/plugins/eventInformation',
-  { src: "~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", mode: "client" }
-],
+    { src: "~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", mode: "client" }
+  ],
 
   /*
    ** Nuxt.js modules

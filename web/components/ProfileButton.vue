@@ -1,11 +1,17 @@
 <template lang="pug">
 .profile
   i.bi.bi-person.me-2
-  span Perfil
+  span {{isLogged ? 'Perfil' : 'Acceder'}}
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      isLogged: false // Check with Firebase
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -14,6 +20,10 @@ export default {}
   border-radius: 4px;
   padding: 1em;
   cursor: pointer;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   span {
     font-family: 'Merriweather', serif;

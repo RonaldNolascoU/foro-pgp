@@ -4,7 +4,7 @@ div
     .col-2
       ProfileButton
     .col-2
-      Avatar(:width='74', :height='74')
+      Avatar(:img='"/users/fondo.png"', :width='74', :height='74')
     .col-2
       NeedALawyerButton
     .col-2
@@ -19,7 +19,26 @@ div
 
   .row.mt-5
     .col-12
-      PGPHero(:title="'Foro PGP'", :subtitle="'Conocimiento jurídico en línea para personas y empresas'")
+      CardHero(
+        :title='"Foro PGP"',
+        :subtitle='"Conocimiento jurídico en línea para personas y empresas"',
+        :includeLogo='true'
+      )
+
+  .row.mt-5
+    .col-12
+      File(:type='"image"', :url='"/img_preview.png"')
+  .row.mt-5
+    .col-12
+      VideoContent
+
+  RecentPosts.mt-5
+
+  .row.mt-5
+    Testimonials
+
+  .row.mt-5
+    FiltersSearchbar
 </template>
 
 <script>
@@ -29,7 +48,12 @@ import NeedALawyerButton from '@/components/NeedALawyerButton'
 import Breadcrumb from '@/components/Breadcrumb'
 import PostTitle from '@/components/PostTitle'
 import UserHero from '@/components/users/UserHero'
-import PGPHero from '@/components/pgp/PGPHero'
+import CardHero from '@/components/pgp/CardHero'
+import File from '@/components/File'
+import VideoContent from '@/components/VideoContent'
+import RecentPosts from '@/components/RecentPosts'
+import Testimonials from '@/components/Testimonials'
+import FiltersSearchbar from '@/components/FiltersSearchbar'
 
 export default {
   components: {
@@ -39,7 +63,12 @@ export default {
     Breadcrumb,
     PostTitle,
     UserHero,
-    PGPHero
+    CardHero,
+    File,
+    VideoContent,
+    RecentPosts,
+    Testimonials,
+    FiltersSearchbar
   }
 }
 </script>
