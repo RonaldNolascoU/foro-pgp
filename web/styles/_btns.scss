@@ -1,0 +1,35 @@
+.radius-left {
+  border-top: 26px;
+  border-left: 26px;
+}
+.radius-left {
+  border-radius: 26px 0 0 26px;
+  height: 55px;
+  width: 220px;
+  @media (max-width: 768px) {
+    width: auto;
+  }
+}
+.radius-right {
+  border-radius: 0 26px 26px 0;
+  height: 55px;
+  width: 220px;
+  border-left: 1px solid white;
+  @media (max-width: 768px) {
+    width: auto;
+  }
+}
+.btn-radius {
+  border-radius: 26px;
+  height: 55px;
+}
+
+.main-btn {
+  height: 69px;
+  width: 220px;
+  border-radius: 28px;
+}
+
+.small-btn {
+  height: 47px;
+}
