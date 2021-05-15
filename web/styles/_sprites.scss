@@ -33,6 +33,21 @@
     width: 22px;
     background-position: -37px -242px;
   }
+  &.person {
+    height: 20px;
+    width: 19px;
+    background-position: -77px -21px;
+  }
+  &.calendar {
+    height: 59px;
+    width: 51px;
+    background-position: -251px -82px;
+  }
+  &.youtube {
+    height: 37px;
+    width: 49px;
+    background-position: -329px -94px;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),

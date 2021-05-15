@@ -4,6 +4,33 @@
       :title="$store.state.eventInformation.name"
       :ticket-link="$store.state.eventInformation.ticket"
     )
+    .d-flex.justify-content-center
+      PostCard
+    br
+    br
+    .d-flex.justify-content-center
+      EventInfo
+    br
+    br
+    .d-flex.justify-content-center
+      UserInfo
+    br
+    br
+    .d-flex.justify-content-center
+      Temary
+    br
+    br
+    .d-flex.justify-content-center
+      Feedback
+    br
+    br
+    .d-flex.justify-content-center
+      CourseInfo
+    br
+    br
+    .d-flex.justify-content-center
+      FaqInfo
+
     .row.m-0
       Sidebar
       nuxt.layout
@@ -14,19 +41,34 @@
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 import Sidebar from '../components/Sidebar.vue'
+import CourseInfo from '../components/cards/CourseInfo'
+import FaqInfo from '../components/cards/FaqInfo'
+import Feedback from '../components/cards/Feedback'
+import Temary from '../components/cards/Temary'
+import UserInfo from '../components/cards/UserInfo'
+import EventInfo from '../components/cards/EventInfo'
+import PostCard from '../components/cards/PostCard'
 
 export default {
   components: {
     Navbar,
     Footer,
-    Sidebar
+    Sidebar,
+    CourseInfo,
+    FaqInfo,
+    Feedback,
+    Temary,
+    UserInfo,
+    EventInfo,
+    PostCard
   }
 }
 </script>
 
-<style>
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
+<style lang="scss">
+// @import '../styles/custom-media.css';
+// @import '../styles/custom-properties.css';
+@import '../styles/app';
 
 html {
   font-family: var(--font-family-sans);

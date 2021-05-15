@@ -15,3 +15,46 @@
     top: 44px;
   }
 }
+
+.outside-card {
+  left: -170px;
+  top: -178px;
+  @media (max-width: 768px) {
+    left: 0;
+    top: 0;
+  }
+}
+
+.position-md-relative,
+.position-md-absolute {
+  @media (max-width: 1925px) {
+    position: static !important;
+  }
+}
+
+.post-sidebar {
+  background: rgba(35, 53, 57, 0.84);
+  transition: width 1s;
+  overflow-x: hidden;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 0px !important;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+    position: static !important;
+    height: 20%;
+  }
+}
+
+.post-info:hover {
+  .post-sidebar {
+    position: absolute;
+    width: 50% !important;
+    @media (max-width: 768px) {
+      width: 100% !important;
+      position: static !important;
+    }
+  }
+}
