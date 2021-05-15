@@ -27,7 +27,7 @@
 
 .position-md-relative,
 .position-md-absolute {
-  @media (max-width: 1925px) {
+  @media (max-width: 768px) {
     position: static !important;
   }
 }
