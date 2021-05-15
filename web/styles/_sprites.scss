@@ -1,5 +1,5 @@
 .sprites {
-  background-image: url('./../assets/images/sprites.webp');
+  background-image: url('/users/images/sprites.webp');
   background-repeat: no-repeat;
   display: inline-block;
 
@@ -54,7 +54,7 @@
   only screen and (min-device-pixel-ratio: 2) {
   .sprites {
     /* Reference the @2x Sprite */
-    background-image: url('./../assets/images/sprites@2x.webp');
+    background-image: url('/users/images/sprites@2x.webp');
     /* Translate the @2x sprite's dimensions back to 1x */
     background-size: 1920px 1080px;
   }

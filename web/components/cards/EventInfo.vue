@@ -27,17 +27,17 @@ div
                 .w-75.width-res
                     .row.m-4
                         .col-12.col-lg-4.mt-3.text-center
-                            - var img2 = "/_nuxt/assets/images/img1.png"
-                            img(src=img2)
+                            - var img1 = "/users/images/img1.png"
+                            img(src=img1)
                             .mt-3.pt-2.secondary.btn-text-size.normal-font.text-center Juan Manuel González
                             .primary.btn-text-size.event-role-title Inmobiliario
                         .col-12.col-lg-4.mt-3.text-center
-                            - var img3 = "/_nuxt/assets/images/img1.png"
-                            img(src=img3)
+                            - var img2 = "/users/images/img2.png"
+                            img(src=img2)
                             .mt-3.pt-2.secondary.btn-text-size.normal-font.text-center María Helena Padilla
                             .primary.btn-text-size.event-role-title Tributario
                         .col-12.col-lg-4.mt-3.text-center.mb-5.mb-md-0
-                            - var img3 = "/_nuxt/assets/images/img1.png"
+                            - var img3 = "/users/images/img3.png"
                             img(src=img3)
                             .mt-3.pt-2.secondary.btn-text-size.normal-font.text-center David Garzón G.
                             .primary.btn-text-size.event-role-title Derecho público

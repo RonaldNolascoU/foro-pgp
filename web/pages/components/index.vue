@@ -41,8 +41,35 @@ div
   .mt-5.d-flex.justify-content-center
     PreviousNextButton
 
-  .mt-5.d-flex.justify-content-center.mb-5
+  .mt-5.d-flex.justify-content-center
     SubscribeCard
+
+  .d-flex.justify-content-center.mt-5
+    PostCard
+    br
+    br
+  .d-flex.justify-content-center.mt-5
+    EventInfo
+    br
+    br
+  .d-flex.justify-content-center.mt-5
+    UserInfo
+    br
+    br
+  .d-flex.justify-content-center.mt-5
+    Temary
+    br
+    br
+  .d-flex.justify-content-center.mt-5
+    Feedback
+    br
+    br
+  .d-flex.justify-content-center.mt-5
+    CourseInfo
+    br
+    br
+  .d-flex.justify-content-center.mt-5.mb-5
+    FaqInfo
 </template>
 
 <script>
@@ -60,6 +87,13 @@ import Testimonials from '@/components/Testimonials'
 import FiltersSearchbar from '@/components/FiltersSearchbar'
 import PreviousNextButton from '@/components/PreviousNextButton'
 import SubscribeCard from '@/components/SubscribeCard'
+import CourseInfo from '@/components/cards/CourseInfo'
+import FaqInfo from '@/components/cards/FaqInfo'
+import Feedback from '@/components/cards/Feedback'
+import Temary from '@/components/cards/Temary'
+import UserInfo from '@/components/cards/UserInfo'
+import EventInfo from '@/components/cards/EventInfo'
+import PostCard from '@/components/cards/PostCard'
 
 export default {
   components: {
@@ -76,7 +110,14 @@ export default {
     Testimonials,
     FiltersSearchbar,
     PreviousNextButton,
-    SubscribeCard
+    SubscribeCard,
+    CourseInfo,
+    FaqInfo,
+    Feedback,
+    Temary,
+    UserInfo,
+    EventInfo,
+    PostCard
   }
 }
 </script>
