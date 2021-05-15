@@ -1,44 +1,34 @@
 {
+  "name": "foropgp",
   "private": true,
-  "name": "sanity-nuxt-events-studio",
-  "version": "1.0.11",
+  "version": "1.0.0",
+  "description": "",
   "main": "package.json",
-  "author": "Sanity <hello@sanity.io>",
+  "author": "Carlos Mario Cortés H. <brujaaa@gmail.com>",
+  "license": "UNLICENSED",
   "scripts": {
-    "dev": "sanity start",
-    "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
-    "build": "sanity build",
-    "graphql-deploy": "sanity graphql deploy --playground",
-    "lint": "eslint .",
-    "test": "sanity check"
+    "start": "sanity start",
+    "build": "sanity build"
   },
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "@sanity/base": "^2.0.0",
-    "@sanity/cli": "^2.0.0",
-    "@sanity/components": "^2.0.0",
-    "@sanity/core": "^2.0.0",
-    "@sanity/dashboard": "^2.0.0",
-    "@sanity/default-layout": "^2.0.0",
-    "@sanity/default-login": "^2.0.0",
-    "@sanity/desk-tool": "^2.0.0",
-    "date-fns": "^1.30.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^3.11.0",
-    "sanity-plugin-dashboard-widget-document-list": "^0.0.11",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    "@sanity/base": "^2.10.2",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.10.2",
+    "@sanity/default-layout": "^2.10.2",
+    "@sanity/default-login": "^2.8.0",
+    "@sanity/desk-tool": "^2.10.2",
+    "@sanity/vision": "^2.10.0",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "sanity-plugin-color-picker": "^1.0.3"
   },
-  "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-react": "^7.0.2",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier-eslint-cli": "^4.7.1"
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RonaldNolascoU/foro-pgp.git"
   }
 }
