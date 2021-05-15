@@ -1,5 +1,6 @@
 import sanityClient from '@sanity/client'
 
+// TODO: CHANGE PROJECTID TO OWN
 export default sanityClient({
   // Find your project ID and dataset in `sanity.json` in your studio project
   projectId: 't9qq6ej1',

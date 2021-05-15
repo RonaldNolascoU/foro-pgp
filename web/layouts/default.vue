@@ -1,22 +1,38 @@
-<template>
-  <div>
-    <Navbar
-      :title="$store.state.eventInformation.name"
-      :ticket-link="$store.state.eventInformation.ticket"
-    />
-    <nuxt />
-    <Footer />
-  </div>
+<template lang="pug">
+div
+  Navbar(
+    :title='$store.state.eventInformation.name',
+    :ticket-link='$store.state.eventInformation.ticket'
+  )
+  .row.m-0
+    Sidebar
+    nuxt.layout
+  Footer
 </template>
 
 <script>
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
+import Sidebar from '../components/Sidebar.vue'
 
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    Sidebar
+  },
+  async mounted() {
+    await this.$fire.authReady
+    // Timeout before firebase fetches current user
+    setTimeout(async () => {
+      const user = await this.$fire.auth.currentUser
+      console.log(user, 'auth user')
+      if (user) {
+        this.$store.commit('auth/isAuth', true)
+      } else {
+        this.$store.commit('auth/isAuth', false)
+      }
+    }, 600)
   }
 }
 </script>
@@ -29,6 +45,10 @@ html {
   font-family: var(--font-family-sans);
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
+}
+
+.layout {
+  flex: 1;
 }
 
 body {
