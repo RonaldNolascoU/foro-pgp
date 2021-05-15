@@ -1,0 +1,29 @@
+.primary-bg {
+  background: #9fd44e;
+}
+
+.primary-bg-bordered {
+  border: 1px solid #9fd44e;
+  background: transparent;
+}
+
+.event-bg {
+  background-image: url('/users/images/img4.jpg');
+  background-repeat: no-repeat;
+  border-radius: 26px 26px 0 0;
+  display: inline-block;
+  height: 357px;
+  width: 1351px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    width: 100vw;
+    background-size: cover !important;
+  }
+}
+
+.yellow-line {
+  background: #e9dcba;
+  width: 7px;
+  height: 100%;
+}

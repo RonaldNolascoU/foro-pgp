@@ -1,39 +1,14 @@
-<template>
-  <section class="container">
-    <header class="header">
-      <h1 class="title">{{ info.name }}</h1>
-      <p class="subtitle">{{ info.description }}</p>
-      <div class="dates">
-        {{ new Date(info.schedule.from) | dateFilter('DD MMMM ha') }}
-        &ndash;
-        {{ new Date(info.schedule.to) | dateFilter('ha') }}
-      </div>
-      <div class="venue">{{ info.venue.name }}, {{ info.venue.city }}</div>
-    </header>
-
-    <figure :v-if="info.image">
-      <SanityImage
-        :image="info.image"
-        :width="1800"
-        :height="500"
-        class="mainImage"
-      />
-      <figcaption>{{ info.image.caption }}</figcaption>
-    </figure>
-
-    <div class="sessionListContainer">
-      <h2 class="sessionListTitle">Schedule</h2>
-      <SessionList :program="program" :info="info" />
-    </div>
-  </section>
+<template lang="pug">
+section.container
+  header.header
+    h1.title {{ info.name }}
+    p.subtitle {{ info.description }}
 </template>
 
 <script>
 import { dateFilter } from 'vue-date-fns'
 
 import sanityClient from '../sanityClient'
-import SanityImage from '~/components/SanityImage'
-import SessionList from '~/components/SessionList'
 
 const query = `
   {
@@ -44,10 +19,6 @@ const query = `
 `
 
 export default {
-  components: {
-    SanityImage,
-    SessionList
-  },
   filters: {
     dateFilter
   },

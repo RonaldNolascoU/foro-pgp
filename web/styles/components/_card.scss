@@ -1,0 +1,60 @@
+.card-container {
+  background: #ffffff;
+  box-shadow: 0px 4px 97px rgba(0, 0, 0, 0.12);
+  border-radius: 19px;
+
+  .card-border {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border-radius: 19px;
+    padding: 10px;
+    margin: 3px !important;
+  }
+
+  .outside-btn {
+    top: 44px;
+  }
+}
+
+.outside-card {
+  left: -170px;
+  top: -178px;
+  @media (max-width: 768px) {
+    left: 0;
+    top: 0;
+  }
+}
+
+.position-md-relative,
+.position-md-absolute {
+  @media (max-width: 768px) {
+    position: static !important;
+  }
+}
+
+.post-sidebar {
+  background: rgba(35, 53, 57, 0.84);
+  transition: width 1s;
+  overflow-x: hidden;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 0px !important;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+    position: static !important;
+    height: 20%;
+  }
+}
+
+.post-info:hover {
+  .post-sidebar {
+    position: absolute;
+    width: 50% !important;
+    @media (max-width: 768px) {
+      width: 100% !important;
+      position: static !important;
+    }
+  }
+}

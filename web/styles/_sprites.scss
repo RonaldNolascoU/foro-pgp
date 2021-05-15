@@ -1,0 +1,61 @@
+.sprites {
+  background-image: url('/users/images/sprites.webp');
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  &.message {
+    height: 24px;
+    width: 24px;
+    background-position: -26px -19px;
+  }
+  &.share {
+    height: 23px;
+    width: 29px;
+    background-position: -110px -94px;
+  }
+  &.video {
+    height: 24px;
+    width: 30px;
+    background-position: -33px -100px;
+  }
+  &.doc {
+    height: 27px;
+    width: 22px;
+    background-position: -37px -147px;
+  }
+  &.unlimited {
+    height: 17px;
+    width: 32px;
+    background-position: -32px -200px;
+  }
+  &.phone {
+    height: 30px;
+    width: 22px;
+    background-position: -37px -242px;
+  }
+  &.person {
+    height: 20px;
+    width: 19px;
+    background-position: -77px -21px;
+  }
+  &.calendar {
+    height: 59px;
+    width: 51px;
+    background-position: -251px -82px;
+  }
+  &.youtube {
+    height: 37px;
+    width: 49px;
+    background-position: -329px -94px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  .sprites {
+    /* Reference the @2x Sprite */
+    background-image: url('/users/images/sprites@2x.webp');
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 1920px 1080px;
+  }
+}
