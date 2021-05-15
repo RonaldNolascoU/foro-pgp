@@ -1,7 +1,7 @@
 export default {
-  name: 'bioPortableText',
+  title: 'Texto enriquecido',
+  name: 'textoRico',
   type: 'array',
-  title: 'Excerpt',
   of: [
     {
       title: 'Block',

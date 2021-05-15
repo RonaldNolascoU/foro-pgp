@@ -1,48 +1,46 @@
-// First, we must import the schema creator
 import createSchema from 'part:@sanity/base/schema-creator'
-
-// Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // document types
-import eventInformation from './documents/eventInformation'
-import person from './documents/person'
-import session from './documents/session'
-import program from './documents/program'
+import abogados from './documents/abogados'
+import articulos from './documents/articulos'
+import cursos from './documents/cursos'
+import formatos from './documents/formatos'
+import noticias from './documents/noticias'
+import podcast from './documents/podcast'
+import preguntasRespuestas from './documents/preguntasRespuestas'
+import servicios from './documents/servicios'
+import testimonios from './documents/testimonios'
+import videos from './documents/videos'
+import webinars from './documents/webinars'
 
 // Object types
-import mainImage from './objects/mainImage'
-import venue from './objects/venue'
-import schedule from './objects/schedule'
-import scheduleItem from './objects/scheduleItem'
-import bioPortableText from './objects/bioPortableText'
-import bodyPortableText from './objects/bodyPortableText'
-import eventReference from './objects/eventReference'
-import personReference from './objects/personReference'
+import cursoCapitulo from './objects/cursoCapitulo'
+import formato from './objects/formato'
+import invitados from './objects/invitados'
+import textoRico from './objects/textorico'
 
-// Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
-  // We name our schema
-  name: 'event',
-  // Then proceed to concatenate our our document type
-  // to the ones provided by any plugins that are installed
+  name: 'foroPGP',
+  
   types: schemaTypes.concat([
-    // The following are document types which will appear
-    // in the studio.
-    eventInformation,
-    person,
-    venue,
-    session,
+    // Documentos
+    abogados,
+    articulos,
+    cursos,
+    formatos,
+    noticias,
+    podcast,
+    preguntasRespuestas,
+    servicios,
+    testimonios,
+    videos,
+    webinars,
 
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
-    schedule,
-    program,
-    scheduleItem,
-    mainImage,
-    bioPortableText,
-    bodyPortableText,
-    eventReference,
-    personReference
+    // Objetos
+    cursoCapitulo,
+    formato,
+    invitados,
+    textoRico
   ])
 })
