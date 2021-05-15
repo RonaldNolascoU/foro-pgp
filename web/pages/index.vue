@@ -1,8 +1,8 @@
 <template lang="pug">
 section.container
   header.header
-    h1.title {{info.name}}
-    p.subtitle {{info.description}}
+    h1.title {{ info.name }}
+    p.subtitle {{ info.description }}
 </template>
 
 <script>

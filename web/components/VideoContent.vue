@@ -1,5 +1,5 @@
 <template lang="pug">
-.content.shadow-lg
+.content.shadow-lg.flex-wrap
   File(:type='"image"', :url='"/img_preview.png"')
   CourseContent
 </template>

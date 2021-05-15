@@ -53,6 +53,7 @@ export default {
     width: 40%;
     @media screen and (max-width: 1200px) {
       width: 100%;
+      border-radius: 19px 19px 0 0;
     }
     padding: 2em;
     border-radius: 19px 0 0 19px;
@@ -68,6 +69,8 @@ export default {
     width: 60%;
     @media screen and (max-width: 1200px) {
       width: 100%;
+      border-radius: 0 0 19px 19px;
+      padding: 1em;
     }
     padding: 2em 4em 2em 4em;
     background: #ffffff;
@@ -83,8 +86,23 @@ export default {
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    .view__more {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   .badges {
     flex-wrap: wrap;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+
+      span {
+        text-align: center;
+      }
+    }
   }
 }
 </style>

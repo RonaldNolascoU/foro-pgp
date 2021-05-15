@@ -42,5 +42,9 @@ export default {
       margin-left: 1em;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 }
 </style>

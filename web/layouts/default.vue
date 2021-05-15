@@ -1,13 +1,13 @@
 <template lang="pug">
-  div
-    Navbar(
-      :title="$store.state.eventInformation.name"
-      :ticket-link="$store.state.eventInformation.ticket"
-    )
-    .row.m-0
-      Sidebar
-      nuxt.layout
-    Footer
+div
+  Navbar(
+    :title='$store.state.eventInformation.name',
+    :ticket-link='$store.state.eventInformation.ticket'
+  )
+  .row.m-0
+    Sidebar
+    nuxt.layout
+  Footer
 </template>
 
 <script>
@@ -20,6 +20,19 @@ export default {
     Navbar,
     Footer,
     Sidebar
+  },
+  async mounted() {
+    await this.$fire.authReady
+    // Timeout before firebase fetches current user
+    setTimeout(async () => {
+      const user = await this.$fire.auth.currentUser
+      console.log(user, 'auth user')
+      if (user) {
+        this.$store.commit('auth/isAuth', true)
+      } else {
+        this.$store.commit('auth/isAuth', false)
+      }
+    }, 600)
   }
 }
 </script>

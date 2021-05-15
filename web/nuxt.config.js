@@ -21,7 +21,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: "Foro PGP",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,7 +41,10 @@ export default {
   css: ["~/node_modules/bootstrap/scss/bootstrap.scss", "~/node_modules/bootstrap-icons/font/bootstrap-icons.css"],
 
   link: [
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap' }
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?&family=Oswald&display=swap' },
   ],
 
   /*
@@ -54,6 +57,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
+
+  //TODO: CHANGE FIREBASE KEYS TO OWN KEYS
   modules: [
     [
       '@nuxtjs/firebase',
@@ -67,7 +72,10 @@ export default {
           appId: '1:854498698477:web:d5ea69e1e94b6d611d98e4',
         },
         services: {
-          auth: true,
+          auth: {
+            onAuthStateChangedMutation: 'auth/ON_AUTH_STATE_CHANGED_MUTATION',
+            onAuthStateChangedAction: 'auth/onAuthStateChangedAction',
+          },
           firestore: true
         }
       }

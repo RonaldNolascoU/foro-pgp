@@ -1,14 +1,38 @@
 <template lang="pug">
-.profile
-  i.bi.bi-person.me-2
-  span {{isLogged ? 'Perfil' : 'Acceder'}}
+div
+  button.profile(@click='openModal')
+    i.bi.bi-person.me-2
+    span {{ isLogged ? "Perfil" : "Acceder" }}
+  AuthModal(v-if='showModal', @closeModal='closeModal')
 </template>
 
 <script>
+import AuthModal from '@/components/AuthModal'
 export default {
+  components: { AuthModal },
   data() {
     return {
-      isLogged: false // Check with Firebase
+      showModal: false
+    }
+  },
+  computed: {
+    isLogged() {
+      return this.$store.state.auth.user.auth
+    }
+  },
+  methods: {
+    openModal($event) {
+      if (this.isLogged) {
+        $event.preventDefault()
+        this.$router.push({ name: 'users' })
+      } else {
+        this.showModal = true
+        document.body.style.overflowY = 'hidden'
+      }
+    },
+    closeModal() {
+      this.showModal = false
+      document.body.style.overflowY = 'scroll'
     }
   }
 }
@@ -17,6 +41,7 @@ export default {
 <style lang="scss" scoped>
 .profile {
   border: 1px solid #000000;
+  background: white;
   border-radius: 4px;
   padding: 1em;
   cursor: pointer;

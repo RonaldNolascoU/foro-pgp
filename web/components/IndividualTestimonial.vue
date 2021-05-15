@@ -21,9 +21,16 @@ export default {
 .testimonial {
   width: 425px;
   margin: 1em;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
   .quote__wrapper {
     position: relative;
     width: 425px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   .quote {
     background-color: white;
@@ -32,6 +39,9 @@ export default {
     border-radius: 6px;
     padding: 3em;
     height: 231px;
+    @media screen and (max-width: 768px) {
+      padding: 2em;
+    }
     &::after {
       content: '';
       position: absolute;

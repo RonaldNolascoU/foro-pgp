@@ -64,6 +64,7 @@ export default {
       border: none;
       background: transparent;
       outline: none;
+      font-family: 'Merriweather';
     }
   }
 }

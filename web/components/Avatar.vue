@@ -1,5 +1,7 @@
 <template lang="pug">
-.profile__image.d-flex.justify-content-center
+.profile__image.d-flex(
+  :class='centered ? "justify-content-center" : "justify-content-end"'
+)
   img(
     :src='isLogged ? img : img',
     :width='width',
@@ -26,6 +28,10 @@ export default {
     className: {
       type: String,
       default: 'rounded-circle'
+    },
+    centered: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -36,4 +42,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.profile__image {
+  @media screen and (max-width: 768px) {
+    justify-content: center !important;
+  }
+}
+</style>

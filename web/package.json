@@ -1,8 +1,8 @@
 {
-  "name": "sanity-nuxt-events-web",
+  "name": "foro-pgp",
   "version": "1.0.12",
-  "description": "An event website powered by Nuxt and Sanity.io",
-  "author": "Sanity.io",
+  "description": "Foro PGP",
+  "author": "RonaldNolascoU",
   "private": true,
   "scripts": {
     "dev": "nuxt",

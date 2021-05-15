@@ -14,16 +14,14 @@ div
         :title='"Hacienda Bogotá cumple un año con términos suspendidos"'
       )
   .row
-    .col-6
-      UserHero
+    UserHero
 
   .row.mt-5
-    .col-12
-      CardHero(
-        :title='"Foro PGP"',
-        :subtitle='"Conocimiento jurídico en línea para personas y empresas"',
-        :includeLogo='true'
-      )
+    CardHero(
+      :title='"Foro PGP"',
+      :subtitle='"Conocimiento jurídico en línea para personas y empresas"',
+      :includeLogo='true'
+    )
 
   .row.mt-5
     .col-12
@@ -37,8 +35,14 @@ div
   .row.mt-5
     Testimonials
 
-  .row.mt-5
+  .mt-5
     FiltersSearchbar
+
+  .mt-5.d-flex.justify-content-center
+    PreviousNextButton
+
+  .mt-5.d-flex.justify-content-center.mb-5
+    SubscribeCard
 </template>
 
 <script>
@@ -54,6 +58,8 @@ import VideoContent from '@/components/VideoContent'
 import RecentPosts from '@/components/RecentPosts'
 import Testimonials from '@/components/Testimonials'
 import FiltersSearchbar from '@/components/FiltersSearchbar'
+import PreviousNextButton from '@/components/PreviousNextButton'
+import SubscribeCard from '@/components/SubscribeCard'
 
 export default {
   components: {
@@ -68,7 +74,9 @@ export default {
     VideoContent,
     RecentPosts,
     Testimonials,
-    FiltersSearchbar
+    FiltersSearchbar,
+    PreviousNextButton,
+    SubscribeCard
   }
 }
 </script>

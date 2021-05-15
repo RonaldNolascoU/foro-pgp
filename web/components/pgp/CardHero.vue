@@ -55,6 +55,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  font-weight: bold;
+}
 .hero {
   text-align: center;
   background: url('/users/fondo.png');

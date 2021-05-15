@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "sanity-nuxt-events",
+  "name": "foro-pgp",
   "version": "1.0.12",
   "scripts": {
     "build": "lerna run build --parallel",

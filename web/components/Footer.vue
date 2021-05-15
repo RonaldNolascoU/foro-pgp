@@ -2,7 +2,7 @@
 div
   footer
     .row
-      .col-4
+      .col-12.col-md-4
         .content
           h2 Contenido
           .border__green
@@ -11,7 +11,7 @@ div
             li Webinars y cursos
             li Podcast
             li Preguntas y respuestas
-      .col-4
+      .col-12.col-md-4
         .sign
           h2 La Firma
           .border__green
@@ -20,7 +20,7 @@ div
             li Abogados
             li Servicios especializados
             li Formatos y planillas
-      .col-4
+      .col-12.col-md-4
         .contact
           h2 Contacto
           .border__green
@@ -30,10 +30,9 @@ div
               a(href='mailto:pgp@pgplegal.com') pgp@pgplegal.com
             li +57(1) 210 1000
             li pgplegal.com
-  .row
   .footer__secondary
     span 2021 | Pinilla, González & Prieto Abogados | Bogotá, Colombia
-    span Poliítica de tratamiento de datos
+    span Política de tratamiento de datos
 </template>
 
 <script>
@@ -61,6 +60,10 @@ footer {
   padding: 1.5em 0em 1.5em 8.5em;
   background: #233539;
   color: white;
+
+  @media screen and (max-width: 1200px) {
+    padding: 1.5em 1em;
+  }
 
   .content,
   .sign,
@@ -102,5 +105,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   background: #192629;
   padding: 1.5em 1em 1.5em 8em;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    padding: 1.5em 1em;
+    span {
+      display: flex;
+    }
+  }
 }
 </style>

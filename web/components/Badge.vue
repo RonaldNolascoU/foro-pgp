@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .badge {
+  font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
   padding: 0.8em 3em;
   margin-right: 1em;
